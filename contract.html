@@ -436,7 +436,6 @@ function go(n){
       if(!days.length){alert('수업 요일을 선택해주세요.');return;}
       document.getElementById('pv-school').textContent=v('school');
       document.getElementById('pv-subject').textContent=v('subject');
-      document.getElementById('pv-days').textContent=getDays();
       document.getElementById('pv-pay').textContent=v('pay');
     }
     if(cur===2){
@@ -486,7 +485,6 @@ function fillPrintArea(){
   document.getElementById('pr-school').textContent=v('school');
   document.getElementById('pr-subject-top').textContent=v('subject');
   document.getElementById('pr-period').textContent=getPeriod();
-  document.getElementById('pr-days').textContent=getDays();
   document.getElementById('pr-days2').textContent=getDays();
   document.getElementById('pr-pay').textContent=v('pay');
   document.getElementById('pr-name').textContent=v('iname');
